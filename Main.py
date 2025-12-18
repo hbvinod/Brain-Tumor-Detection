@@ -7,7 +7,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 
-# Paths
+# dataset Paths
 train_dir = 'dataset/Training'
 test_dir = 'dataset/Testing'
 
