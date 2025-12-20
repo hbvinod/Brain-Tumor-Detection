@@ -6,7 +6,7 @@ from PIL import Image
 import cv2
 from gradcam import get_gradcam_heatmap, overlay_gradcam
 
-# Load the model
+# Load  model
 model = tf.keras.models.load_model("model/brain_tumor_model.h5")
 
 # Defining  classes 
