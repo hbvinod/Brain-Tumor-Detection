@@ -26,7 +26,8 @@ if uploaded_file is not None:
     image_np = np.array(image.resize((150, 150))) / 255.0
 
     if st.button("Predict"):
-        # Prediction
+        
+        # Predicting 
         preds = model.predict(np.expand_dims(image_np, axis=0))[0]
         class_idx = np.argmax(preds)
         predicted_class = class_names[class_idx]
