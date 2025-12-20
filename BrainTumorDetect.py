@@ -15,6 +15,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 train_dir = 'dataset/Training'
 test_dir = 'dataset/Testing'
 
+
 img_size = (150, 150)
 batch_size = 32
 
