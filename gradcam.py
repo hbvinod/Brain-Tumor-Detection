@@ -18,6 +18,7 @@ def get_gradcam_heatmap(model, image_array, last_conv_layer_name, pred_index=Non
             pred_index = tf.argmax(predictions[0])
         class_channel = predictions[:, pred_index]
 
+    #
     grads = tape.gradient(class_channel, conv_outputs)
     pooled_grads = tf.reduce_mean(grads, axis=(0, 1, 2))
     conv_outputs = conv_outputs[0]
